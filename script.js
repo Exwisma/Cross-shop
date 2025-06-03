@@ -29,14 +29,14 @@ fetch("./data.json")
 
       isma.classList.add(
         'w-[400px]', 'h-[560px]',
-        'pl-[28px]', 'pt-[28px]', 'mt-[10px]',
+        'pl-[28px]', 'pr-[28px]', 'pt-[28px]', 'mt-[10px]',
         'rounded-[28px]', 'flex', 'flex-col',
         'justify-between', 'mb-[10px]',
         'border-2', 'border-black', 'border-b-[6px]'
       );
 
       isma.innerHTML = `
-        <div>
+        <div class=''>
           <div class='relative w-[344px] h-[284px]'>
             <img onclick="like(this)" class='w-[33px] h-[27px] absolute top-[26px] right-[26px] z-10 ml-[280px]' src='./Heart.svg' alt="heart">
             <img class='absolute z-1 w-[344px] h-[284px] object-cover rounded-[16px]' src="${element.img}" alt="${element.title}">
