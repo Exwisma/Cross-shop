@@ -24,8 +24,14 @@ fetch("./data.json")
       const isma = document.createElement('div');
 
 ``
-      const color = colors[Math.round(Math.random() * 34)];
-      isma.style.backgroundColor = color;
+  const color = () => colors[Math.round(Math.random() * 34)];
+      isma.style.backgroundColor = color();
+
+      const id = setInterval(() => {
+        isma.style.backgroundColor = color();
+      }, 4000)
+
+    
 
       isma.classList.add(
         'w-[400px]', 'h-[560px]',
